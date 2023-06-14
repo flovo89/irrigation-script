@@ -4,6 +4,7 @@ class Motor:
     def __init__(self, pin):
         self.pin = pin
         self.state = False
+        GPIO.setmode(GPIO.BCM)
         GPIO.setup(pin, GPIO.OUT)
         GPIO.output(pin, False)
 
