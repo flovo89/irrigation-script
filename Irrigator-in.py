@@ -1,3 +1,4 @@
+import RPi.GPIO as GPIO
 from actors.Motor import Motor
 from sensors.Sensor import Sensor
 import time
@@ -28,4 +29,5 @@ def pumpWater(motor, time_s):
 pumpWater(pumpInA, 15)
 pumpWater(pumpInB, 15)
 
+GPIO.cleanup()
 
