@@ -1,0 +1,9 @@
+[Unit]
+Description=Triggers the irrigation service
+
+[Timer]
+OnCalendar=*-*-* 20:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

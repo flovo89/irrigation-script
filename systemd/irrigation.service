@@ -1,0 +1,10 @@
+[Unit]
+Description=Starts the irrigation script
+Wants=irrigation.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python /home/dev/project/irrigation-script/Irrigator-in.py
+
+[Install]
+WantedBy=multi-user.target
